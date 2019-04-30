@@ -48,10 +48,10 @@ public class PlaylistsServiceImpl implements PlaylistsService{
 
 
     @Override
-    public PlaylistsResponse addPlaylist(String token, String name) {
+    public PlaylistsResponse addPlaylist(String token, String body) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            Map<String,Object> map = mapper.readValue(name, Map.class);
+            Map<String,Object> map = mapper.readValue(body, Map.class);
             Playlist newPlaylist = new Playlist((Integer)map.get("id"), (String) map.get("name"),(Boolean) map.get("owner"), new ArrayList());
             data.add(newPlaylist);
             return new PlaylistsResponse(data, 123445);
@@ -61,7 +61,18 @@ public class PlaylistsServiceImpl implements PlaylistsService{
     }
 
     @Override
-    public PlaylistsResponse editPlaylist(String token, int id) {
-        return null;
+    public PlaylistsResponse editPlaylist(String token, int id, String body) {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            Map<String,Object> map = mapper.readValue(body, Map.class);
+            for(Playlist playlist:data){
+                if(playlist.getId() == id){
+                    playlist.setName((String) map.get("name"));
+                }
+            }
+            return new PlaylistsResponse(data, 123445);
+        } catch (IOException e) {
+            return null;
+        }
     }
 }

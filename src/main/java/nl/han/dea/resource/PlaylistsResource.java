@@ -34,7 +34,6 @@ public class PlaylistsResource{
     @Produces(MediaType.APPLICATION_JSON)
     public Response addPlaylist(@QueryParam("token") String token, String body) {
         try{
-
             PlaylistsResponse playlistsResponse = playlistsService.addPlaylist(token,body);
             if(playlistsResponse.playlists.get(0).getName().isEmpty()){
                 throw new SQLException("Er is niks toegevoegd");
@@ -63,9 +62,9 @@ public class PlaylistsResource{
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response editPlaylist(@QueryParam("token") String token, @PathParam("id") int id) {
+    public Response editPlaylist(@QueryParam("token") String token, @PathParam("id") int id, String body) {
         try{
-            PlaylistsResponse playlistsResponse = playlistsService.getPlaylists(token);
+            PlaylistsResponse playlistsResponse = playlistsService.editPlaylist(token, id, body);
             return Response.status(200).entity(playlistsResponse).build();
         } catch( Exception e){
             return Response.status(400).build();
