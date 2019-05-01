@@ -15,7 +15,7 @@ public class PlaylistsServiceImpl implements PlaylistsService{
 
     private static ArrayList<Playlist> data = new ArrayList<>();;
 
-    public void initPlaylists(){
+    private void initPlaylists(){
         Playlist death_metal = new Playlist(1, "Death metal",  true, new ArrayList());
         Playlist pop = new Playlist(2, "pop",  true, new ArrayList());
         data.add(death_metal);
@@ -52,7 +52,7 @@ public class PlaylistsServiceImpl implements PlaylistsService{
         ObjectMapper mapper = new ObjectMapper();
         try {
             Map<String,Object> map = mapper.readValue(body, Map.class);
-            Playlist newPlaylist = new Playlist((Integer)map.get("id"), (String) map.get("name"),(Boolean) map.get("owner"), new ArrayList());
+            Playlist newPlaylist = new Playlist((Integer)map.get("id"), (String) map.get("name"), true, new ArrayList());
             data.add(newPlaylist);
             return new PlaylistsResponse(data, 123445);
         } catch (IOException e) {

@@ -1,31 +1,67 @@
 package nl.han.dea.resource;
 
-import nl.han.dea.model.Track;
 import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.TracksService;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.ArrayList;
+import javax.ws.rs.core.Response;
 
-@Path("/tracks")
-public class TracksResource{
+@Path("")
+public class TracksResource {
+    @Inject
+    @Named("TracksServiceImpl")
+    private TracksService tracksService;
 
-    public ArrayList<Track> tracks = new ArrayList<>();
-
+    @Path("tracks")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public TracksResponse tracksResponse(@QueryParam("token") String token, @QueryParam("forPlayList") int forPlayList) {
+    public Response getTracks(@QueryParam("token") String token, @QueryParam("forPlayList") int forPlayList) {
         try{
-            tracks.add(new Track(3,"Ocean and a rock", "Lisa Hannigan",  337, "Sea sew",  0,null,null, false));
-            tracks.add(new Track(4,"So Long, Marianne", "Leonard Cohen",  546, "Songs of Leonard Cohen",  0,null,null, false));
-            tracks.add(new Track(5,"One", "Metallica",  423, "Sea sew",  37,"1-11-2001","Long version", true));
-            return new TracksResponse(tracks);
+            TracksResponse tracksResponse = tracksService.getTracks(token, forPlayList);
+            return Response.status(200).entity(tracksResponse).build();
         }catch(Exception e){
-            return null;
+            return Response.status(400).build();
         }
     }
+
+    @Path("/playlists/{playlistId}/tracks")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTracksFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId){
+        try{
+            TracksResponse tracksResponse = tracksService.getTracksFromPlaylist(token, playlistId);
+            return Response.status(200).entity(tracksResponse).build();
+        }catch(Exception e){
+            return Response.status(400).build();
+        }
+    }
+
+    @Path("/playlists/{playlistId}/tracks")
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response addTrackToPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, String body){
+        try{
+            TracksResponse tracksResponse = tracksService.addTrackToPlaylist(token, playlistId, body);
+            return Response.status(201).entity(tracksResponse).build();
+        }catch(Exception e){
+            return Response.status(400).build();
+        }
+    }
+
+    @Path("/playlists/{playlistId}/tracks/{trackId}")
+    @DELETE
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response removeTrackFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, @PathParam("trackId") int trackId){
+        try{
+            TracksResponse tracksResponse = tracksService.removeTrackFromPlaylist(token, playlistId, trackId);
+            return Response.status(200).entity(tracksResponse).build();
+        }catch(Exception e){
+            return Response.status(400).build();
+        }
+    }
+
 }
