@@ -182,6 +182,37 @@ public class MySQLConnection implements Data{
         return tracks;
     }
 
+    @Override
+    public void addTracksToPlaylist(String token, int playlistId, int trackId, boolean offlineAvailable) {
+        try{
+            PreparedStatement prep = con.prepareStatement("INSERT INTO tracksinplaylists (playlistId, trackId) VALUES (?,?)");
+            prep.setInt(1, playlistId);
+            prep.setInt(2, trackId);
+            prep.execute();
+            prep.close();
+            PreparedStatement update_track = con.prepareStatement("UPDATE track SET offlineAvailable=? WHERE id=?");
+            update_track.setBoolean(1, offlineAvailable);
+            update_track.setInt(2, trackId);
+            update_track.execute();
+            update_track.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void removeTracksFromPlaylist(String token, int playlistId, int trackId) {
+        try{
+            PreparedStatement prep = con.prepareStatement("DELETE FROM tracksinplaylists where playlistId = ? AND trackId =? ;");
+            prep.setInt(1, playlistId);
+            prep.setInt(2, trackId);
+            prep.execute();
+            prep.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
     private void extractTrackVariablesFromPrepStatement(ArrayList<Track> tracks, ResultSet res) throws SQLException {
         while (res.next()) {
             int id = res.getInt("t.id");

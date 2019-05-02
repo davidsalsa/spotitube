@@ -91,11 +91,19 @@ public class PlaylistsServiceImpl implements PlaylistsService{
 
     @Override
     public TracksResponse addTrackToPlaylist(String token, int playlistId, String body) {
-        return null;
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            Map map = mapper.readValue(body, Map.class);
+            data.addTracksToPlaylist(token, playlistId, (int) map.get("id"), (Boolean) map.get("offlineAvailable"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return getTracksFromPlaylist(token, playlistId);
     }
 
     @Override
     public TracksResponse removeTrackFromPlaylist(String token, int playlistId, int trackId) {
-        return null;
+        data.removeTracksFromPlaylist(token, playlistId, trackId);
+        return getTracksFromPlaylist(token, playlistId);
     }
 }

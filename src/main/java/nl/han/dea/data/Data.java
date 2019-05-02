@@ -15,4 +15,6 @@ public interface Data {
     void editPlaylist(String token, int id, String name) throws SQLException;
     ArrayList<Track> getTracks(String token, int forPlay);
     ArrayList<Track> getTracksFromPlaylist(String token, int playlistId);
+    void addTracksToPlaylist(String token, int playlistId, int trackId, boolean offlineAvailable);
+    void removeTracksFromPlaylist(String token, int playlistId, int trackId);
 }

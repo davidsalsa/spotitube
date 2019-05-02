@@ -8,12 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c6570027-3815-4c78-bcef-e74895cc7cb8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistsService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistsService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TracksService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TracksService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,17 +51,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PlaylistsServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-              <folding>
-                <element signature="e#3108#3109#0" expanded="true" />
-                <element signature="e#3135#3136#0" expanded="true" />
-                <element signature="e#3245#3246#0" expanded="true" />
-                <element signature="e#3272#3273#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="105" column="37" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TracksResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,18 +84,18 @@
       <file leaf-file-name="PlaylistsResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+            <state relative-caret-position="348">
+              <caret line="103" column="102" lean-forward="false" selection-start-line="103" selection-start-column="92" selection-end-line="103" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+            <state relative-caret-position="306">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,36 +107,39 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLConnection.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MySQLConnection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1488">
-              <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            <state relative-caret-position="484">
+              <caret line="221" column="42" lean-forward="true" selection-start-line="221" selection-start-column="42" selection-end-line="221" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1556807899070" expanded="true" signature="909:991" ph="SELECT u.use... user" />
-                <marker date="1556807899070" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
-                <marker date="1556807899070" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
-                <marker date="1556807899070" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
-                <marker date="1556807899070" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
-                <marker date="1556807899070" expanded="true" signature="4205:4220" ph="update playlists... " />
-                <marker date="1556807899070" expanded="true" signature="4205:4253" ph="update playlists... " />
-                <marker date="1556807899070" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
-                <marker date="1556807899070" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
-                <marker date="1556807899070" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
-                <marker date="1556807899070" expanded="true" signature="5647:5981" ph="SELECT t.id,... tracks" />
-                <marker date="1556807899070" expanded="true" signature="5828:5980" ph="SELECT track... tracksinplaylists" />
-                <marker date="1556807899070" expanded="true" signature="5828:5981" ph="SELECT track... tracksinplaylists" />
-                <marker date="1556807899070" expanded="true" signature="5982:5983" ph="SELECT t.id,... tracks" />
-                <marker date="1556807899070" expanded="true" signature="5982:5984" ph="SELECT t.id,... tracks" />
-                <marker date="1556807899070" expanded="true" signature="6527:6852" ph="SELECT t.id,... tracks" />
-                <marker date="1556807899070" expanded="true" signature="6705:6851" ph="SELECT track... tracksinplaylists" />
+                <marker date="1556813316069" expanded="true" signature="909:991" ph="SELECT u.use... user" />
+                <marker date="1556813316069" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
+                <marker date="1556813316069" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
+                <marker date="1556813316069" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
+                <marker date="1556813316069" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
+                <marker date="1556813316069" expanded="true" signature="4205:4220" ph="update playlists... " />
+                <marker date="1556813316069" expanded="true" signature="4205:4253" ph="update playlists... " />
+                <marker date="1556813316069" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
+                <marker date="1556813316069" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
+                <marker date="1556813316069" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
+                <marker date="1556813316069" expanded="true" signature="5647:5981" ph="SELECT t.id,... tracks" />
+                <marker date="1556813316069" expanded="true" signature="5828:5980" ph="SELECT track... tracksinplaylists" />
+                <marker date="1556813316069" expanded="true" signature="5828:5981" ph="SELECT track... tracksinplaylists" />
+                <marker date="1556813316069" expanded="true" signature="5982:5983" ph="SELECT t.id,... tracks" />
+                <marker date="1556813316069" expanded="true" signature="5982:5984" ph="SELECT t.id,... tracks" />
+                <marker date="1556813316069" expanded="true" signature="6527:6852" ph="SELECT t.id,... tracks" />
+                <marker date="1556813316069" expanded="true" signature="6705:6851" ph="SELECT track... tracksinplaylists" />
+                <marker date="1556813316069" expanded="true" signature="7366:7430" ph="INSERT INTO tracksinplaylists... " />
+                <marker date="1556813316069" expanded="true" signature="7632:7678" ph="UPDATE track... " />
+                <marker date="1556813316069" expanded="true" signature="8106:8171" ph="DELETE FROM tracksinplaylists... " />
               </folding>
             </state>
           </provider>
@@ -190,15 +205,15 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TracksService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistsService.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
       </list>
     </option>
   </component>
@@ -587,12 +602,12 @@
       <workItem from="1556621692758" duration="13302000" />
       <workItem from="1556710464388" duration="10452000" />
       <workItem from="1556728085582" duration="170000" />
-      <workItem from="1556789348519" duration="21923000" />
+      <workItem from="1556789348519" duration="23403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65773000" />
+    <option name="totallyTimeSpent" value="67253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,11 +620,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.12633263" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -628,10 +642,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.87366736" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.8662047" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35" sideWeight="0.67963755" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35" sideWeight="0.67697227" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21908316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -891,43 +905,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="84" lean-forward="false" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TracksService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-          <folding>
-            <element signature="e#3108#3109#0" expanded="true" />
-            <element signature="e#3135#3136#0" expanded="true" />
-            <element signature="e#3245#3246#0" expanded="true" />
-            <element signature="e#3272#3273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,15 +928,41 @@
         <state relative-caret-position="119">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state relative-caret-position="348">
+          <caret line="103" column="102" lean-forward="false" selection-start-line="103" selection-start-column="92" selection-end-line="103" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="105" column="37" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -966,47 +975,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1488">
-          <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1556807899070" expanded="true" signature="909:991" ph="SELECT u.use... user" />
-            <marker date="1556807899070" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
-            <marker date="1556807899070" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
-            <marker date="1556807899070" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
-            <marker date="1556807899070" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
-            <marker date="1556807899070" expanded="true" signature="4205:4220" ph="update playlists... " />
-            <marker date="1556807899070" expanded="true" signature="4205:4253" ph="update playlists... " />
-            <marker date="1556807899070" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
-            <marker date="1556807899070" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
-            <marker date="1556807899070" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
-            <marker date="1556807899070" expanded="true" signature="5647:5981" ph="SELECT t.id,... tracks" />
-            <marker date="1556807899070" expanded="true" signature="5828:5980" ph="SELECT track... tracksinplaylists" />
-            <marker date="1556807899070" expanded="true" signature="5828:5981" ph="SELECT track... tracksinplaylists" />
-            <marker date="1556807899070" expanded="true" signature="5982:5983" ph="SELECT t.id,... tracks" />
-            <marker date="1556807899070" expanded="true" signature="5982:5984" ph="SELECT t.id,... tracks" />
-            <marker date="1556807899070" expanded="true" signature="6527:6852" ph="SELECT t.id,... tracks" />
-            <marker date="1556807899070" expanded="true" signature="6705:6851" ph="SELECT track... tracksinplaylists" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state relative-caret-position="484">
+          <caret line="221" column="42" lean-forward="true" selection-start-line="221" selection-start-column="42" selection-end-line="221" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1556813316069" expanded="true" signature="909:991" ph="SELECT u.use... user" />
+            <marker date="1556813316069" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
+            <marker date="1556813316069" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
+            <marker date="1556813316069" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
+            <marker date="1556813316069" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
+            <marker date="1556813316069" expanded="true" signature="4205:4220" ph="update playlists... " />
+            <marker date="1556813316069" expanded="true" signature="4205:4253" ph="update playlists... " />
+            <marker date="1556813316069" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
+            <marker date="1556813316069" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
+            <marker date="1556813316069" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
+            <marker date="1556813316069" expanded="true" signature="5647:5981" ph="SELECT t.id,... tracks" />
+            <marker date="1556813316069" expanded="true" signature="5828:5980" ph="SELECT track... tracksinplaylists" />
+            <marker date="1556813316069" expanded="true" signature="5828:5981" ph="SELECT track... tracksinplaylists" />
+            <marker date="1556813316069" expanded="true" signature="5982:5983" ph="SELECT t.id,... tracks" />
+            <marker date="1556813316069" expanded="true" signature="5982:5984" ph="SELECT t.id,... tracks" />
+            <marker date="1556813316069" expanded="true" signature="6527:6852" ph="SELECT t.id,... tracks" />
+            <marker date="1556813316069" expanded="true" signature="6705:6851" ph="SELECT track... tracksinplaylists" />
+            <marker date="1556813316069" expanded="true" signature="7366:7430" ph="INSERT INTO tracksinplaylists... " />
+            <marker date="1556813316069" expanded="true" signature="7632:7678" ph="UPDATE track... " />
+            <marker date="1556813316069" expanded="true" signature="8106:8171" ph="DELETE FROM tracksinplaylists... " />
           </folding>
         </state>
       </provider>
