@@ -2,14 +2,11 @@ package nl.han.dea.data.impl;
 
 import nl.han.dea.data.Data;
 import nl.han.dea.model.Login;
-import nl.han.dea.model.PlaylistDAO;
+import nl.han.dea.data.dao.PlaylistDAO;
 import nl.han.dea.model.Track;
 
 import javax.inject.Named;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 
 @Named("MySQLConnection")
@@ -59,9 +56,9 @@ public class MySQLConnection implements Data{
     public ArrayList<PlaylistDAO> getPlaylists() {
         ArrayList<PlaylistDAO> playlistList = new ArrayList<>();
         try {
-            PreparedStatement prep = con.prepareStatement("SELECT p.id, p.name, p.owner_token, p.length from playlists p");
+            PreparedStatement prep = con.prepareStatement("SELECT p.id, p.name, p.owner_token, p.length from playlists p;");
             ResultSet res = prep.executeQuery();
-            PreparedStatement getTracks = con.prepareStatement(" SELECT * from tracksInPlaylists tp inner join tracks t on tp.trackId = t.id");
+            PreparedStatement getTracks = con.prepareStatement(" SELECT * from tracksInPlaylists tp inner join tracks t on tp.trackId = t.id;");
             ResultSet trackResultSet = getTracks.executeQuery();
             while (res.next()) {
                 int playlist_id = res.getInt("p.id");
@@ -100,5 +97,48 @@ public class MySQLConnection implements Data{
             e.printStackTrace();
         }
         return playlistList;
+    }
+
+    @Override
+    public void deletePlaylist(String token, int id) throws SQLException {
+        try{
+            PreparedStatement prep = con.prepareStatement("DELETE FROM playlists where owner_token = ? and id = ?;");
+            prep.setString(1, token);
+            prep.setInt(2, id);
+            prep.execute();
+            prep.close();
+        }catch(Exception e){
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    @Override
+    public void addPlaylist(String token, String name) throws SQLException {
+        try{
+            PreparedStatement prep = con.prepareStatement("INSERT INTO playlists (name, owner_token, length) VALUES (?, ?, 0)");
+            prep.setString(1, name);
+            prep.setString(2, token);
+            prep.execute();
+            prep.close();
+        }catch(Exception e){
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    @Override
+    public void editPlaylist(String token, int id, String name) throws SQLException{
+        try{
+            PreparedStatement prep = con.prepareStatement("UPDATE playlists SET name=? WHERE owner_token=? AND id=?");
+            prep.setString(1, name);
+            prep.setString(2, token);
+            prep.setInt(3, id);
+            prep.execute();
+            prep.close();
+        }catch(Exception e){
+            e.printStackTrace();
+            throw e;
+        }
     }
 }

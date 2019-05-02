@@ -15,7 +15,7 @@ CREATE TABLE playlists (
   name varchar(255) NOT NULL,
   owner_token varchar(14) NOT NULL,
   length int(11) NOT NULL,
-  CONSTRAINT fk_owner_token FOREIGN KEY (owner_token) REFERENCES user (token)
+  CONSTRAINT fk_owner_token FOREIGN KEY (owner_token) REFERENCES user (token)  ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
 -- tracks table
@@ -36,8 +36,8 @@ CREATE TABLE tracksInPlaylists(
   playlistId int(11) NOT NULL,
   trackId int(11) NOT NULL,
   PRIMARY KEY (playlistId,trackId),
-  CONSTRAINT fk_playlistId FOREIGN KEY (playlistId) REFERENCES playlists (id),
-  CONSTRAINT fk_trackId FOREIGN KEY (trackId) REFERENCES tracks (id)
+  CONSTRAINT fk_playlistId FOREIGN KEY (playlistId) REFERENCES playlists (id) ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_trackId FOREIGN KEY (trackId) REFERENCES tracks (id)  ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 -- Stored procedure that updates playlist length everytime a track gets added. This happens for every insert/update and delete
@@ -77,6 +77,7 @@ CREATE TRIGGER updatePlaylistLengthAfterUpdate
     WHERE p.id = tp.playlistId;
   END$$
 DELIMITER ;
+
 
 INSERT INTO user (user, password,  token) VALUES
   ('meron', 'meron', '0417-d07a-a5e7'),

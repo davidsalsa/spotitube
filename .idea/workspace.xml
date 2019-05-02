@@ -7,17 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6570027-3815-4c78-bcef-e74895cc7cb8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/model/Playlist.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/model/Playlist.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/target/Spotitube.war" afterPath="$PROJECT_DIR$/target/Spotitube.war" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/LoginServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/LoginServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/Data.class" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/Data.class" />
+      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/impl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/impl/MySQLConnection.class" />
+      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/data/Data.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/data/Data.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/data/impl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/data/impl/MySQLConnection.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +45,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SpotitubeSQL.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -56,8 +68,8 @@
       <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,28 +77,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLConnection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MySQLConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="515">
+              <caret line="129" column="13" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1556796361083" expanded="true" signature="1008:1090" ph="SELECT u.use... user" />
-                <marker date="1556796361083" expanded="true" signature="1912:1973" ph="SELECT p.id,... playlists" />
-                <marker date="1556796361083" expanded="true" signature="2090:2166" ph="SELECT tp.pl... tracksInPlaylists" />
-                <marker date="1556796361083" expanded="true" signature="2091:2166" ph="SELECT * fro... tracksInPlaylists" />
+                <marker date="1556801265187" expanded="true" signature="909:991" ph="SELECT u.use... user" />
+                <marker date="1556801265187" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
+                <marker date="1556801265187" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
+                <marker date="1556801265187" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
+                <marker date="1556801265187" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
+                <marker date="1556801265187" expanded="true" signature="4205:4220" ph="update playlists... " />
+                <marker date="1556801265187" expanded="true" signature="4205:4253" ph="update playlists... " />
+                <marker date="1556801265187" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
+                <marker date="1556801265187" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
+                <marker date="1556801265187" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TracksResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -101,56 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaylistsServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlaylistsServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaylistDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaylistsResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/PlaylistsResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Track.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/Track.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="464">
+              <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -216,14 +179,15 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25982520-da9f-4263-a7d5-a485288a4a2f/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/41ac8c48-4c41-487a-b85a-b39e8a022a71/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/model/Playlist.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -305,6 +269,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dea" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
@@ -611,12 +585,12 @@
       <workItem from="1556621692758" duration="13302000" />
       <workItem from="1556710464388" duration="10452000" />
       <workItem from="1556728085582" duration="170000" />
-      <workItem from="1556789348519" duration="7604000" />
+      <workItem from="1556789348519" duration="11432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51454000" />
+    <option name="totallyTimeSpent" value="55282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -643,7 +617,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34021738" sideWeight="0.48933902" order="8" side_tool="false" content_ui="tabs" />
@@ -902,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/Playlist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -926,29 +892,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="101" />
+        <state relative-caret-position="221">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,10 +916,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -984,30 +932,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="202">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="false" />
+            <element signature="e#878#879#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/73677186-56ea-4b32-9b45-3bfdd73316ca/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="515">
+          <caret line="129" column="13" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1556796361083" expanded="true" signature="1008:1090" ph="SELECT u.use... user" />
-            <marker date="1556796361083" expanded="true" signature="1912:1973" ph="SELECT p.id,... playlists" />
-            <marker date="1556796361083" expanded="true" signature="2090:2166" ph="SELECT tp.pl... tracksInPlaylists" />
-            <marker date="1556796361083" expanded="true" signature="2091:2166" ph="SELECT * fro... tracksInPlaylists" />
+            <marker date="1556801265187" expanded="true" signature="909:991" ph="SELECT u.use... user" />
+            <marker date="1556801265187" expanded="true" signature="1813:1874" ph="SELECT p.id,... playlists" />
+            <marker date="1556801265187" expanded="true" signature="1992:2068" ph="SELECT tp.pl... tracksInPlaylists" />
+            <marker date="1556801265187" expanded="true" signature="1993:2068" ph="SELECT * fro... tracksInPlaylists" />
+            <marker date="1556801265187" expanded="true" signature="4199:4253" ph="DELETE FROM playlists... " />
+            <marker date="1556801265187" expanded="true" signature="4205:4220" ph="update playlists... " />
+            <marker date="1556801265187" expanded="true" signature="4205:4253" ph="update playlists... " />
+            <marker date="1556801265187" expanded="true" signature="4645:4701" ph="INSERT INTO playlists... " />
+            <marker date="1556801265187" expanded="true" signature="4645:4711" ph="INSERT INTO playlists... " />
+            <marker date="1556801265187" expanded="true" signature="5115:5171" ph="UPDATE playlists... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
