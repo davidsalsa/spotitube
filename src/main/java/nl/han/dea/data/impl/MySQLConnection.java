@@ -141,4 +141,61 @@ public class MySQLConnection implements Data{
             throw e;
         }
     }
+
+    @Override
+    public ArrayList<Track> getTracks(String token, int forPlaylist) {
+        ArrayList<Track> tracks = new ArrayList<>();
+        try {
+            PreparedStatement prep = con.prepareStatement("SELECT t.id, t.title, t.performer, t.duration, t.album, t.playcount, t.publicationDate," +
+                    "  t.description, t.offlineAvailable from tracks t WHERE t.id NOT IN (SELECT trackId FROM tracksinplaylists" +
+                            "                                                                WHERE playlistId = ?);");
+            prep.setInt(1, forPlaylist);
+            ResultSet res = prep.executeQuery();
+
+            extractTrackVariablesFromPrepStatement(tracks, res);
+            prep.close();
+            res.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return tracks;
+    }
+
+    @Override
+    public ArrayList<Track> getTracksFromPlaylist(String token, int forPlaylist) {
+        ArrayList<Track> tracks = new ArrayList<>();
+        try {
+            PreparedStatement prep = con.prepareStatement("SELECT  t.id, t.title, t.performer, t.duration, t.album, t.playcount, t.publicationDate," +
+                    "  t.description, t.offlineAvailable from tracks t WHERE t.id IN (SELECT trackId FROM tracksinplaylists" +
+                    "                                                                WHERE playlistId = ?);");
+            prep.setInt(1, forPlaylist);
+            ResultSet res = prep.executeQuery();
+
+            extractTrackVariablesFromPrepStatement(tracks, res);
+            prep.close();
+            res.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return tracks;
+    }
+
+    private void extractTrackVariablesFromPrepStatement(ArrayList<Track> tracks, ResultSet res) throws SQLException {
+        while (res.next()) {
+            int id = res.getInt("t.id");
+            String title = res.getString("t.title");
+            String performer = res.getString("t.performer");
+            int duration = res.getInt("t.duration");
+            String album = res.getString("t.album");
+            int playcount = res.getInt("t.playcount");
+            String publicationDate = res.getString("t.publicationDate");
+            String description = res.getString("t.description");
+            Boolean offlineAvailable = res.getBoolean("t.offlineAvailable");
+
+            Track track = new Track(id, title, performer, duration, album, playcount, publicationDate, description, offlineAvailable);
+            tracks.add(track);
+        }
+    }
 }

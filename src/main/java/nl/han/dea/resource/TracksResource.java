@@ -9,16 +9,16 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("")
+@Path("/")
 public class TracksResource {
     @Inject
     @Named("TracksServiceImpl")
     private TracksService tracksService;
 
-    @Path("tracks")
+    @Path("/tracks")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracks(@QueryParam("token") String token, @QueryParam("forPlayList") int forPlayList) {
+    public Response getTracks(@QueryParam("token") String token, @QueryParam("forPlaylist") int forPlayList) {
         try{
             TracksResponse tracksResponse = tracksService.getTracks(token, forPlayList);
             return Response.status(200).entity(tracksResponse).build();
@@ -63,5 +63,4 @@ public class TracksResource {
             return Response.status(400).build();
         }
     }
-
 }

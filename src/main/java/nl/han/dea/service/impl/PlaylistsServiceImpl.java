@@ -57,7 +57,7 @@ public class PlaylistsServiceImpl implements PlaylistsService{
     public PlaylistsResponse addPlaylist(String token, String body) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            Map<String,Object> map = mapper.readValue(body, Map.class);
+            Map map = mapper.readValue(body, Map.class);
             data.addPlaylist(token,(String) map.get("name"));
             return getPlaylists(token);
         } catch (IOException e) {
@@ -72,7 +72,7 @@ public class PlaylistsServiceImpl implements PlaylistsService{
     public PlaylistsResponse editPlaylist(String token, int id, String body) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            Map<String,Object> map = mapper.readValue(body, Map.class);
+            Map map = mapper.readValue(body, Map.class);
             data.editPlaylist(token, id, (String) map.get("name"));
             return getPlaylists(token);
         } catch (IOException e) {
