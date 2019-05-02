@@ -1,6 +1,7 @@
 package nl.han.dea.resource;
 
 import nl.han.dea.model.response.PlaylistsResponse;
+import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.PlaylistsService;
 
 import javax.inject.Inject;
@@ -57,7 +58,6 @@ public class PlaylistsResource{
     }
 
 
-
     @Path("/{id}")
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
@@ -67,6 +67,43 @@ public class PlaylistsResource{
             PlaylistsResponse playlistsResponse = playlistsService.editPlaylist(token, id, body);
             return Response.status(200).entity(playlistsResponse).build();
         } catch( Exception e){
+            return Response.status(400).build();
+        }
+    }
+
+    @Path("/{playlistId}/tracks")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTracksFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId){
+        try{
+            TracksResponse tracksResponse = playlistsService.getTracksFromPlaylist(token, playlistId);
+            return Response.status(200).entity(tracksResponse).build();
+        }catch(Exception e){
+            return Response.status(400).build();
+        }
+    }
+
+    @Path("/{playlistId}/tracks")
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response addTrackToPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, String body){
+        try{
+            TracksResponse tracksResponse = playlistsService.addTrackToPlaylist(token, playlistId, body);
+            return Response.status(201).entity(tracksResponse).build();
+        }catch(Exception e){
+            return Response.status(400).build();
+        }
+    }
+
+    @Path("/{playlistId}/tracks/{trackId}")
+    @DELETE
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response removeTrackFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, @PathParam("trackId") int trackId){
+        try{
+            TracksResponse tracksResponse = playlistsService.removeTrackFromPlaylist(token, playlistId, trackId);
+            return Response.status(200).entity(tracksResponse).build();
+        }catch(Exception e){
             return Response.status(400).build();
         }
     }

@@ -26,41 +26,4 @@ public class TracksResource {
             return Response.status(400).build();
         }
     }
-
-    @Path("/playlists/{playlistId}/tracks")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getTracksFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId){
-        try{
-            TracksResponse tracksResponse = tracksService.getTracksFromPlaylist(token, playlistId);
-            return Response.status(200).entity(tracksResponse).build();
-        }catch(Exception e){
-            return Response.status(400).build();
-        }
-    }
-
-    @Path("/playlists/{playlistId}/tracks")
-    @POST
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response addTrackToPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, String body){
-        try{
-            TracksResponse tracksResponse = tracksService.addTrackToPlaylist(token, playlistId, body);
-            return Response.status(201).entity(tracksResponse).build();
-        }catch(Exception e){
-            return Response.status(400).build();
-        }
-    }
-
-    @Path("/playlists/{playlistId}/tracks/{trackId}")
-    @DELETE
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response removeTrackFromPlaylist(@QueryParam("token") String token, @PathParam("playlistId") int playlistId, @PathParam("trackId") int trackId){
-        try{
-            TracksResponse tracksResponse = tracksService.removeTrackFromPlaylist(token, playlistId, trackId);
-            return Response.status(200).entity(tracksResponse).build();
-        }catch(Exception e){
-            return Response.status(400).build();
-        }
-    }
 }

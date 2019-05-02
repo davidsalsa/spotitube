@@ -5,6 +5,7 @@ import nl.han.dea.model.Playlist;
 import nl.han.dea.data.dao.PlaylistDAO;
 import nl.han.dea.model.Track;
 import nl.han.dea.model.response.PlaylistsResponse;
+import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.PlaylistsService;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -81,5 +82,20 @@ public class PlaylistsServiceImpl implements PlaylistsService{
             e.printStackTrace();
         }
         return getPlaylists(token);
+    }
+
+    @Override
+    public TracksResponse getTracksFromPlaylist(String token, int playlistId) {
+        return new TracksResponse(data.getTracksFromPlaylist(token, playlistId));
+    }
+
+    @Override
+    public TracksResponse addTrackToPlaylist(String token, int playlistId, String body) {
+        return null;
+    }
+
+    @Override
+    public TracksResponse removeTrackFromPlaylist(String token, int playlistId, int trackId) {
+        return null;
     }
 }

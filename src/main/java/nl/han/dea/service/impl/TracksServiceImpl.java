@@ -24,19 +24,4 @@ public class TracksServiceImpl implements TracksService {
     public TracksResponse getTracks(String token, int forPlaylist) {
         return new TracksResponse(data.getTracks(token, forPlaylist));
     }
-
-    @Override
-    public TracksResponse getTracksFromPlaylist(String token, int playlistId) {
-        return new TracksResponse(data.getTracksFromPlaylist(token, playlistId));
-    }
-
-    @Override
-    public TracksResponse addTrackToPlaylist(String token, int playlistId, String body) {
-        return null;
-    }
-
-    @Override
-    public TracksResponse removeTrackFromPlaylist(String token, int playlistId, int trackId) {
-        return null;
-    }
 }
