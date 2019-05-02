@@ -6,10 +6,10 @@ public class Playlist {
     public int id;
     public String name;
     public boolean owner;
-    public ArrayList tracks;
+    public ArrayList<Track> tracks;
 
     public Playlist(){}
-    public Playlist(int id, String name, boolean owner, ArrayList tracks){
+    public Playlist(int id, String name, boolean owner, ArrayList<Track> tracks){
         this.id = id;
         this.name = name;
         this.owner = owner;
@@ -40,11 +40,11 @@ public class Playlist {
         this.owner = owner;
     }
 
-    public ArrayList getTracks() {
+    public ArrayList<Track> getTracks() {
         return tracks;
     }
 
-    public void setTracks(ArrayList tracks) {
+    public void setTracks(ArrayList<Track> tracks) {
         this.tracks = tracks;
     }
 }
