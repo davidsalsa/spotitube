@@ -190,7 +190,7 @@ public class MySQLConnection implements Data{
             prep.setInt(2, trackId);
             prep.execute();
             prep.close();
-            PreparedStatement update_track = con.prepareStatement("UPDATE track SET offlineAvailable=? WHERE id=?");
+            PreparedStatement update_track = con.prepareStatement("UPDATE tracks SET offlineAvailable=? WHERE id=?");
             update_track.setBoolean(1, offlineAvailable);
             update_track.setInt(2, trackId);
             update_track.execute();
