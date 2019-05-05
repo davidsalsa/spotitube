@@ -1,7 +1,6 @@
 package nl.han.dea.resource;
 
 import nl.han.dea.model.Playlist;
-import nl.han.dea.model.Track;
 import nl.han.dea.model.response.PlaylistsResponse;
 import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.PlaylistsService;
