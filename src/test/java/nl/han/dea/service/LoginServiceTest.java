@@ -30,6 +30,7 @@ public class LoginServiceTest {
     private LoginResponse expected;
     private Login login;
 
+
     @Before
     public void setUp(){
         String password = "test";

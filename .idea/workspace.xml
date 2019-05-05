@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6570027-3815-4c78-bcef-e74895cc7cb8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/resource/PlaylistsResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/resource/PlaylistsResourceTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/LoginServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/LoginServiceTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +20,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/spotitube$TracksServiceTest_shouldReturnLoginResponse.coverage" NAME="TracksServiceTest.shouldReturnLoginResponse Coverage Results" MODIFIED="1557076697469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/spotitube$TracksResourceTest_shouldReturnGetTracksResponseWithStatus400.coverage" NAME="TracksResourceTest.shouldReturnGetTracksResponseWithStatus400 Coverage Results" MODIFIED="1557066677468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>nl.han.dea.resource.*</FILTER>
     </SUITE>
@@ -94,11 +97,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginResourceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resource/LoginResourceTest.java">
+      <file leaf-file-name="TracksServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="323">
+              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TracksResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TracksServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,21 +134,11 @@
       <file leaf-file-name="LoginServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/LoginServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="498">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TracksServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="67" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/model/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/TracksResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TracksService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistsService.java" />
@@ -200,12 +214,13 @@
         <option value="$PROJECT_DIR$/src/test/nl/han/dea/resource/LoginResourceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistsServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resource/LoginResourceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resource/TracksResourceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resource/PlaylistsResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resource/PlaylistsResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/LoginServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java" />
       </list>
     </option>
   </component>
@@ -440,7 +455,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginServiceTest">
+  <component name="RunManager" selected="JUnit.TracksServiceTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -512,56 +527,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PlaylistsResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.dea.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Spotitube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.dea.resource" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resource.PlaylistsResourceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="PlaylistsResourceTest.shouldReturnaddTrackToPlaylistResponseWithStatus201" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.dea.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Spotitube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.dea.resource" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resource.PlaylistsResourceTest" />
-      <option name="METHOD_NAME" value="shouldReturnaddTrackToPlaylistResponseWithStatus201" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="TracksResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -576,6 +541,56 @@
       <option name="MAIN_CLASS_NAME" value="nl.han.dea.resource.TracksResourceTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TracksServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Spotitube" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="nl.han.dea.service" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.service.TracksServiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TracksServiceTest.shouldReturnLoginResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Spotitube" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="nl.han.dea.service" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.service.TracksServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnLoginResponse" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -721,19 +736,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.Spotitube" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PlaylistsResourceTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PlaylistsResourceTest.shouldReturnaddTrackToPlaylistResponseWithStatus201" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TracksResourceTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnLoginResponse" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TracksResourceTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnLoginResponse" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TracksServiceTest.shouldReturnLoginResponse" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TracksServiceTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnLoginResponse" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TracksResourceTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PlaylistsResourceTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PlaylistsResourceTest.shouldReturnaddTrackToPlaylistResponseWithStatus201" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TracksServiceTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TracksServiceTest.shouldReturnLoginResponse" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnLoginResponse" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TracksResourceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -767,25 +782,13 @@
       <workItem from="1556789348519" duration="25750000" />
       <workItem from="1556875061061" duration="8180000" />
       <workItem from="1556985416438" duration="1367000" />
-      <workItem from="1557064572272" duration="7749000" />
+      <workItem from="1557064572272" duration="8394000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="LoginServiceTest - 2019.05.05 at 19h 06m 27s.xml">
       <configuration name="LoginServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 18h 54m 41s.xml">
-      <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 18h 55m 32s.xml">
-      <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 18h 55m 56s.xml">
-      <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 18h 56m 51s.xml">
-      <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 01m 17s.xml">
       <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
@@ -802,9 +805,21 @@
     <history-entry file="LoginServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 06m 18s.xml">
       <configuration name="LoginServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TracksServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 16m 13s.xml">
+      <configuration name="TracksServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TracksServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 16m 25s.xml">
+      <configuration name="TracksServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TracksServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 17m 21s.xml">
+      <configuration name="TracksServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TracksServiceTest_shouldReturnLoginResponse - 2019.05.05 at 19h 18m 18s.xml">
+      <configuration name="TracksServiceTest.shouldReturnLoginResponse" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86896000" />
+    <option name="totallyTimeSpent" value="87541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,14 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/Track.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1198,16 +1205,6 @@
         <state relative-caret-position="272">
           <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,6 +1258,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resource/LoginResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1283,39 +1298,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resource/LoginResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/LoginServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="498">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/model/response/TracksResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/TracksServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
