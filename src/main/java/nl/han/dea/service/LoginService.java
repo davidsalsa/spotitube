@@ -4,5 +4,5 @@ import nl.han.dea.model.request.LoginRequest;
 import nl.han.dea.model.response.LoginResponse;
 
 public interface LoginService {
-    public LoginResponse getLogin(LoginRequest loginRequest);
+    LoginResponse getLogin(LoginRequest loginRequest);
 }

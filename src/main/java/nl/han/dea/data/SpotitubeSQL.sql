@@ -32,6 +32,7 @@ CREATE TABLE tracks (
 );
 
 -- stores what track is in which playlist
+-- make sure to disable safe delete/update in preferences for this to work
 CREATE TABLE tracksInPlaylists(
   playlistId int(11) NOT NULL,
   trackId int(11) NOT NULL,

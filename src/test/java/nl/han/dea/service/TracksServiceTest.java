@@ -1,12 +1,8 @@
 package nl.han.dea.service;
 
 import nl.han.dea.data.Data;
-import nl.han.dea.model.Login;
 import nl.han.dea.model.Track;
-import nl.han.dea.model.request.LoginRequest;
-import nl.han.dea.model.response.LoginResponse;
 import nl.han.dea.model.response.TracksResponse;
-import nl.han.dea.service.impl.LoginServiceImpl;
 import nl.han.dea.service.impl.TracksServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,11 +38,12 @@ public class TracksServiceTest {
     }
 
     @Test
-    public void getTracksshouldReturnTracksResponse(){
+    public void getTracksShouldReturnTracksResponse(){
         when(data.getTracks(token, forPlaylist)).thenReturn(tracks);
         TracksResponse actual = tracksService.getTracks(token, forPlaylist);
 
         assertEquals(expected.getTracks(), actual.getTracks());
+        assertEquals(expected.getClass(), actual.getClass());
     }
 
 }

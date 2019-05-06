@@ -1,9 +1,8 @@
 package nl.han.dea.service.impl;
 
 import nl.han.dea.data.Data;
-import nl.han.dea.model.Playlist;
 import nl.han.dea.data.dao.PlaylistDAO;
-import nl.han.dea.model.Track;
+import nl.han.dea.model.Playlist;
 import nl.han.dea.model.response.PlaylistsResponse;
 import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.PlaylistsService;
