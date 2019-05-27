@@ -1,8 +1,7 @@
 package nl.han.dea.service.impl;
 
 import nl.han.dea.data.Data;
-import nl.han.dea.data.dao.PlaylistDAO;
-import nl.han.dea.model.Playlist;
+import nl.han.dea.model.request.PlaylistObject;
 import nl.han.dea.model.response.PlaylistsResponse;
 import nl.han.dea.model.response.TracksResponse;
 import nl.han.dea.service.PlaylistsService;
@@ -20,22 +19,22 @@ public class PlaylistsServiceImpl implements PlaylistsService{
 
     @Inject
     //@Named("MysqlConnection")
-    @Named("MySQLConnection")
+    @Named("MSSQLConnection")
     Data data;
 
     @Override
     public PlaylistsResponse getPlaylists(String token) {
         int total_length=0;
-        ArrayList<Playlist> playlistList = new ArrayList<>();
-        for(PlaylistDAO playlist: data.getPlaylists()){
-            if(playlist.owner_token.equals(token)) { // if owner, set owner true
-                Playlist retrievedPlaylist = new Playlist(playlist.id, playlist.name, true, playlist.tracks);
+        ArrayList<nl.han.dea.model.Playlist> playlistList = new ArrayList<>();
+        for(PlaylistObject playlistObject : data.getPlaylists()){
+            if(playlistObject.owner_token.equals(token)) { // if owner, set owner true
+                nl.han.dea.model.Playlist retrievedPlaylist = new nl.han.dea.model.Playlist(playlistObject.id, playlistObject.name, true, playlistObject.tracks);
                 playlistList.add(retrievedPlaylist);
             } else { // if not owner, set owner false
-                Playlist retrievedPlaylist = new Playlist(playlist.id, playlist.name, false, playlist.tracks);
+                nl.han.dea.model.Playlist retrievedPlaylist = new nl.han.dea.model.Playlist(playlistObject.id, playlistObject.name, false, playlistObject.tracks);
                 playlistList.add(retrievedPlaylist);
             }
-            total_length += playlist.length;
+            total_length += playlistObject.length;
         }
 
         return new PlaylistsResponse(playlistList, total_length);

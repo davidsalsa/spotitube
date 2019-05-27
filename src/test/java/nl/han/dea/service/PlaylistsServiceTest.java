@@ -1,7 +1,7 @@
 package nl.han.dea.service;
 
 import nl.han.dea.data.Data;
-import nl.han.dea.data.dao.PlaylistDAO;
+import nl.han.dea.model.request.PlaylistObject;
 import nl.han.dea.model.Track;
 import nl.han.dea.model.response.PlaylistsResponse;
 import nl.han.dea.model.response.TracksResponse;
@@ -26,7 +26,7 @@ public class PlaylistsServiceTest {
     @Mock
     private Data data;
     private ArrayList<Track> tracks;
-    private ArrayList<PlaylistDAO> playlists;
+    private ArrayList<PlaylistObject> playlistObjects;
     private PlaylistsResponse playlistsResponse;
     private String token;
     private String name;
@@ -35,7 +35,7 @@ public class PlaylistsServiceTest {
 
     @Before
     public void setUp(){
-        playlists = new ArrayList<>();
+        playlistObjects = new ArrayList<>();
         tracks = new ArrayList<>();
         token = "token";
         name = "name";
@@ -47,7 +47,7 @@ public class PlaylistsServiceTest {
 
     @Test
     public void getPlaylistsShouldReturnPlaylistsResponse() {
-    when(data.getPlaylists()).thenReturn(playlists);
+    when(data.getPlaylists()).thenReturn(playlistObjects);
         PlaylistsResponse actual =  playlistsService.getPlaylists(token);
         assertEquals(playlistsResponse.getClass(), actual.getClass());
     }
@@ -55,8 +55,8 @@ public class PlaylistsServiceTest {
     @Test
     public void getPlaylistsOwnerShouldReturnTrueWhenTokensAreEquals() {
         boolean expected = true;
-        playlists.add(new PlaylistDAO(playlistId, name, token, 0, tracks)); //playlistDAO with token
-        when(data.getPlaylists()).thenReturn(playlists);
+        playlistObjects.add(new PlaylistObject(playlistId, name, token, 0, tracks)); //playlistDAO with token
+        when(data.getPlaylists()).thenReturn(playlistObjects);
         PlaylistsResponse response =  playlistsService.getPlaylists(token); //same token
         boolean actual = response.playlists.get(0).owner;
 
@@ -67,8 +67,8 @@ public class PlaylistsServiceTest {
     public void getPlaylistsOwnerShouldReturnFalseWhenTokensDiffer() {
         boolean expected = false;
         String token2 = "different";
-        playlists.add(new PlaylistDAO(playlistId, name, token, 0, tracks)); //playlistDAO with token
-        when(data.getPlaylists()).thenReturn(playlists);
+        playlistObjects.add(new PlaylistObject(playlistId, name, token, 0, tracks)); //playlistDAO with token
+        when(data.getPlaylists()).thenReturn(playlistObjects);
         PlaylistsResponse response =  playlistsService.getPlaylists(token2); //different token
         boolean actual = response.playlists.get(0).owner;
 
@@ -81,10 +81,10 @@ public class PlaylistsServiceTest {
         int duration2 = 25;
         int duration3 = 33;
         int expected = duration1 + duration2 + duration3;
-        playlists.add(new PlaylistDAO(playlistId, name, token, duration1, tracks));
-        playlists.add(new PlaylistDAO(playlistId, name, token, duration2, tracks));
-        playlists.add(new PlaylistDAO(playlistId, name, token, duration3, tracks));
-        when(data.getPlaylists()).thenReturn(playlists);
+        playlistObjects.add(new PlaylistObject(playlistId, name, token, duration1, tracks));
+        playlistObjects.add(new PlaylistObject(playlistId, name, token, duration2, tracks));
+        playlistObjects.add(new PlaylistObject(playlistId, name, token, duration3, tracks));
+        when(data.getPlaylists()).thenReturn(playlistObjects);
         PlaylistsResponse response =  playlistsService.getPlaylists(token); //different token
         int actual = response.length;
 

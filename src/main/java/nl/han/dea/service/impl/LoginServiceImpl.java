@@ -14,7 +14,7 @@ public class LoginServiceImpl implements LoginService{
 
     @Inject
     //@Named("MysqlConnection")
-    @Named("MySQLConnection")
+    @Named("MSSQLConnection")
     Data data;
 
     @Override

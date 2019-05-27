@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Spotitube@localhost" uuid="73677186-56ea-4b32-9b45-3bfdd73316ca">
-      <database-info product="MySQL" version="5.7.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )">
+      <database-info product="MySQL" version="5.7.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.21">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -10,6 +10,16 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <introspection-schemas>*:spotitube</introspection-schemas>
+    </data-source>
+    <data-source name="Spotitube" uuid="62745fa8-b337-4866-8857-7e58c321f644">
+      <database-info product="Microsoft SQL Server" version="14.00.2014" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.2 for SQL Server" driver-version="7.2.1.0" dbms="MSSQL" exact-version="14.0.2014" exact-driver-version="7.2">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <introspection-schemas>Spotitube:dbo</introspection-schemas>
     </data-source>
   </component>
 </project>

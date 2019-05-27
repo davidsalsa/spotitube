@@ -2,7 +2,7 @@ package nl.han.dea.data.impl;
 
 import nl.han.dea.data.Data;
 import nl.han.dea.model.Login;
-import nl.han.dea.data.dao.PlaylistDAO;
+import nl.han.dea.model.request.PlaylistObject;
 import nl.han.dea.model.Track;
 
 import javax.inject.Named;
@@ -45,7 +45,6 @@ public class MySQLConnection implements Data{
                 prep.close();
                 return login;
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,8 +52,8 @@ public class MySQLConnection implements Data{
     }
 
     @Override
-    public ArrayList<PlaylistDAO> getPlaylists() {
-        ArrayList<PlaylistDAO> playlistList = new ArrayList<>();
+    public ArrayList<PlaylistObject> getPlaylists() {
+        ArrayList<PlaylistObject> playlistObjectList = new ArrayList<>();
         try {
             PreparedStatement prep = con.prepareStatement("SELECT p.id, p.name, p.owner_token, p.length from playlists p;");
             ResultSet res = prep.executeQuery();
@@ -85,18 +84,18 @@ public class MySQLConnection implements Data{
                                 publicationDate, description, offlineAvailable));
                     }
                 }
-                PlaylistDAO playlistDAO = new PlaylistDAO(playlist_id, playlist_name, playlist_owner_token, playlist_length, tracks);
-                playlistList.add(playlistDAO);
+                PlaylistObject playlistObject = new PlaylistObject(playlist_id, playlist_name, playlist_owner_token, playlist_length, tracks);
+                playlistObjectList.add(playlistObject);
             }
             trackResultSet.close();
             getTracks.close();
             prep.close();
             res.close();
-            return playlistList;
+            return playlistObjectList;
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return playlistList;
+        return playlistObjectList;
     }
 
     @Override

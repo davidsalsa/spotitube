@@ -12,7 +12,7 @@ public class TracksServiceImpl implements TracksService {
 
     @Inject
     //@Named("MysqlConnection")
-    @Named("MySQLConnection")
+    @Named("MSSQLConnection")
     Data data;
 
     @Override
