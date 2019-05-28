@@ -7,38 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6570027-3815-4c78-bcef-e74895cc7cb8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeMSSQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MSSQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spotitube_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spotitube_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spotitube_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spotitube_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25982520-da9f-4263-a7d5-a485288a4a2f/storage_v2/_src_/schema/spotitube.q3oFyQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25982520-da9f-4263-a7d5-a485288a4a2f/storage_v2/_src_/schema/spotitube.q3oFyQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41ac8c48-4c41-487a-b85a-b39e8a022a71/storage_v2/_src_/schema/spotitube.q3oFyQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41ac8c48-4c41-487a-b85a-b39e8a022a71/storage_v2/_src_/schema/spotitube.q3oFyQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/73677186-56ea-4b32-9b45-3bfdd73316ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/73677186-56ea-4b32-9b45-3bfdd73316ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/dao/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/model/request/PlaylistObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistsServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spotitube.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/impl/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/data/impl/MySQLConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spotitube/WEB-INF/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/data/dao/PlaylistDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/data/impl/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/data/impl/MySQLConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/han/dea/service/impl/PlaylistsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/han/dea/service/PlaylistsServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/han/dea/service/PlaylistsServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1436">
-              <caret line="169" column="106" lean-forward="true" selection-start-line="167" selection-start-column="59" selection-end-line="169" selection-end-column="106" />
+            <state relative-caret-position="2754">
+              <caret line="169" column="106" selection-start-line="167" selection-start-column="59" selection-end-line="169" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1558888139606" expanded="true" signature="917:999" ph="SELECT u.use... user" />
@@ -134,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MSSQLConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3553">
-              <caret line="221" column="50" lean-forward="true" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
+            <state relative-caret-position="487">
+              <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,11 +131,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeMSSQL.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-680">
+              <caret line="18" column="135" lean-forward="true" selection-start-line="18" selection-start-column="135" selection-end-line="18" selection-end-column="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1700">
+              <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -173,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="153">
               <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -185,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="170">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,13 +247,13 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeMSSQL.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5beb21ff-0377-4ffd-b50f-af26d0bb4517/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/62745fa8-b337-4866-8857-7e58c321f644/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MSSQLConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql" />
       </list>
     </option>
   </component>
@@ -432,8 +417,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,7 +429,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/oefeningtoetspatterns/pom.xml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/beergame-backend/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -722,6 +707,8 @@
       <workItem from="1558545454957" duration="2795000" />
       <workItem from="1558801385903" duration="3130000" />
       <workItem from="1558885445189" duration="3669000" />
+      <workItem from="1558979457672" duration="638000" />
+      <workItem from="1559031962751" duration="1891000" />
     </task>
     <servers />
   </component>
@@ -758,7 +745,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105583000" />
+    <option name="totallyTimeSpent" value="108112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,8 +758,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23560767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23827292" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -793,7 +781,7 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48933902" weight="0.32934782" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49573562" weight="0.32934782" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.48294243" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.48294243" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.20895523" side_tool="true" weight="0.32934782" />
       <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.67430705" weight="0.34994584" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
@@ -1183,47 +1171,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeMSSQL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="135" lean-forward="true" selection-start-line="18" selection-start-column="135" selection-end-line="18" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/62745fa8-b337-4866-8857-7e58c321f644/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MySQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1436">
-          <caret line="169" column="106" lean-forward="true" selection-start-line="167" selection-start-column="59" selection-end-line="169" selection-end-column="106" />
+        <state relative-caret-position="2754">
+          <caret line="169" column="106" selection-start-line="167" selection-start-column="59" selection-end-line="169" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1558888139606" expanded="true" signature="917:999" ph="SELECT u.use... user" />
@@ -1243,20 +1197,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="153">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/PlaylistsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/TracksServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="170">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1265,11 +1219,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/impl/MSSQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="221" column="50" lean-forward="true" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
+        <state relative-caret-position="487">
+          <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeMSSQL.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="18" column="135" lean-forward="true" selection-start-line="18" selection-start-column="135" selection-end-line="18" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/data/SpotitubeSQL.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
         </state>
       </provider>
     </entry>
