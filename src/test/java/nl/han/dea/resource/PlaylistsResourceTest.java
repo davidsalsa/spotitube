@@ -45,6 +45,16 @@ public class PlaylistsResourceTest {
         assertEquals(200, response.getStatus());
     }
 
+    @Test(expected = Exception.class)
+    public void shouldReturnGetPlaylistsResponseWithStatus400(){
+        String token = "1234-1234";
+        when(playlistsService.getPlaylists(token)).thenThrow(new Exception());
+        Response response = playlistsResource.getPlaylists(token);
+
+        assertEquals(400, response.getStatus());
+    }
+
+
     @Test
     public void shouldReturnAddPlaylistsResponseWithStatus201(){
         String token = "1234-1234";
@@ -66,6 +76,16 @@ public class PlaylistsResourceTest {
         assertEquals(400, response.getStatus());
     }
 
+    @Test(expected = Exception.class)
+    public void shouldReturnAddPlaylistsResponseWithStatus400WhenExceptionThrown(){ // when playlistsResponse.playlists.get(0).getName().isEmpty() is true SQLException occurs.
+        String token = "1234-1234";
+        String body = "";
+        when(playlistsService.addPlaylist(token, body)).thenThrow(new Exception());
+        Response response = playlistsResource.addPlaylist(token, body);
+
+        assertEquals(400, response.getStatus());
+    }
+
     @Test
     public void shouldReturnDeletePlaylistsResponseWithStatus200(){
         String token = "1234-1234";
@@ -74,6 +94,16 @@ public class PlaylistsResourceTest {
         Response response = playlistsResource.deletePlaylist(token, id);
 
         assertEquals(200, response.getStatus());
+    }
+
+    @Test(expected = Exception.class)
+    public void shouldReturnDeletePlaylistsResponseWithStatus400(){
+        String token = "1234-1234";
+        int id = 0;
+        when(playlistsService.deletePlaylist(token, id)).thenThrow(new Exception());
+        Response response = playlistsResource.deletePlaylist(token, id);
+
+        assertEquals(400, response.getStatus());
     }
 
     @Test
@@ -87,11 +117,32 @@ public class PlaylistsResourceTest {
         assertEquals(200, response.getStatus());
     }
 
+    @Test(expected = Exception.class)
+    public void shouldReturnEditPlaylistsResponseWithStatus400(){
+        String token = "1234-1234";
+        String body = "";
+        int id = 0;
+        when(playlistsService.editPlaylist(token, id, body)).thenThrow(new Exception());
+        Response response = playlistsResource.editPlaylist(token, id, body);
+
+        assertEquals(400, response.getStatus());
+    }
+
     @Test
     public void shouldReturnGetTracksFromPlaylistResponseWithStatus200(){
         String token = "1234-1234";
         int id = 0;
         when(playlistsService.getTracksFromPlaylist(token, id)).thenReturn(tracksResponse);
+        Response response = playlistsResource.getTracksFromPlaylist(token, id);
+
+        assertEquals(200, response.getStatus());
+    }
+
+    @Test(expected = Exception.class)
+    public void shouldReturnGetTracksFromPlaylistResponseWithStatus400(){
+        String token = "1234-1234";
+        int id = 0;
+        when(playlistsService.getTracksFromPlaylist(token, id)).thenThrow(new Exception());
         Response response = playlistsResource.getTracksFromPlaylist(token, id);
 
         assertEquals(200, response.getStatus());
@@ -108,6 +159,17 @@ public class PlaylistsResourceTest {
         assertEquals(201, response.getStatus());
     }
 
+    @Test(expected = Exception.class)
+    public void shouldReturnaddTrackToPlaylistResponseWithStatus400(){
+        String token = "1234-1234";
+        String body = "";
+        int id = 0;
+        when(playlistsService.addTrackToPlaylist(token, id, body)).thenThrow(new Exception());
+        Response response = playlistsResource.addTrackToPlaylist(token, id, body);
+
+        assertEquals(201, response.getStatus());
+    }
+
     @Test
     public void shouldReturnRemoveTrackFromPlaylistResponseWithStatus200(){
         String token = "1234-1234";
@@ -117,5 +179,16 @@ public class PlaylistsResourceTest {
         Response response = playlistsResource.removeTrackFromPlaylist(token, playlistId, trackId);
 
         assertEquals(200, response.getStatus());
+    }
+
+    @Test(expected = Exception.class)
+    public void shouldReturnRemoveTrackFromPlaylistResponseWithStatus400(){
+        String token = "1234-1234";
+        int playlistId = 0;
+        int trackId = 0;
+        when(playlistsService.removeTrackFromPlaylist(token, playlistId, trackId)).thenThrow(new Exception());
+        Response response = playlistsResource.removeTrackFromPlaylist(token, playlistId, trackId);
+
+        assertEquals(400, response.getStatus());
     }
 }

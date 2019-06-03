@@ -48,4 +48,12 @@ public class LoginServiceTest {
         assertEquals(expected.getClass(),actual.getClass()); //checks on class
     }
 
+    @Test(expected = Exception.class)
+    public void shouldReturnNullWhenExceptionThrown(){
+        when(data.getLogin(loginRequest.getUser(), loginRequest.getPassword())).thenThrow(new Exception());
+        LoginResponse actual = loginService.getLogin(loginRequest);
+
+        assertEquals(null, actual); //checks on name
+    }
+
 }

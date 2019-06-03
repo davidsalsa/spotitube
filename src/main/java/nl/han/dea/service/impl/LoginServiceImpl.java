@@ -13,8 +13,8 @@ import javax.inject.Named;
 public class LoginServiceImpl implements LoginService{
 
     @Inject
-    //@Named("MysqlConnection")
-    @Named("MSSQLConnection")
+    @Named("MySQLConnection")
+    //@Named("MSSQLConnection")
     Data data;
 
     @Override

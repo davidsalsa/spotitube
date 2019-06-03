@@ -50,4 +50,11 @@ public class LoginResourceTest {
         Response response = loginResource.getLogin(null);
         assertEquals(401, response.getStatus());
     }
+
+    @Test(expected = Exception.class)
+    public void shouldReturnLoginResponseWithStatus401WhenSQLExceptionThrown(){
+        when(loginService.getLogin(loginRequest)).thenThrow(new Exception());
+        Response response = loginResource.getLogin(null);
+        assertEquals(401, response.getStatus());
+    }
 }

@@ -42,4 +42,14 @@ public class TracksResourceTest {
 
         assertEquals(200, response.getStatus());
     }
+
+    @Test(expected = Exception.class)
+    public void shouldReturnGetTracksResponseWithStatus400(){
+        String token = "1234-1234";
+        int forPlaylist = 1;
+        when(tracksService.getTracks(token, forPlaylist)).thenThrow(new Exception());
+        Response response = tracksResource.getTracks(token, forPlaylist);
+
+        assertEquals(400, response.getStatus());
+    }
 }

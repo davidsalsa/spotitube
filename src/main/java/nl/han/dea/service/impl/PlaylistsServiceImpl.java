@@ -18,8 +18,8 @@ import java.util.Map;
 public class PlaylistsServiceImpl implements PlaylistsService{
 
     @Inject
-    //@Named("MysqlConnection")
-    @Named("MSSQLConnection")
+    @Named("MySQLConnection")
+    //@Named("MSSQLConnection")
     Data data;
 
     @Override
@@ -36,7 +36,6 @@ public class PlaylistsServiceImpl implements PlaylistsService{
             }
             total_length += playlistObject.length;
         }
-
         return new PlaylistsResponse(playlistList, total_length);
     }
 
