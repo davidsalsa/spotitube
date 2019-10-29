@@ -11,7 +11,7 @@ import javax.inject.Named;
 public class TracksServiceImpl implements TracksService {
 
     @Inject
-    @Named("MySQLConnection")
+    @Named("JPAMySQLConnection")
     //@Named("MSSQLConnection")
     Data data;
 

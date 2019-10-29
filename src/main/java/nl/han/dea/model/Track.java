@@ -1,6 +1,6 @@
 package nl.han.dea.model;
 
-public class Track {
+public class Track implements ITrack{
     private int id;
     private String title;
     private String performer;
