@@ -17,30 +17,6 @@ import java.util.ArrayList;
 @Named("JPAMySQLConnection")
 public class TrackJPATest implements Data {
 
-
-    public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("Spotitube");
-        EntityManager em = factory.createEntityManager();
-        ArrayList<Track> tracks = new ArrayList<>();
-        int id = 2;
-        String sql = "SELECT t from JPATrack t WHERE t.id NOT IN (SELECT t FROM JPATracksInPlaylists t WHERE t.playlistId = "+ id + ")";
-        Query query = em.createQuery(sql);
-
-        for(Object track : query.getResultList()){
-            tracks.add((JPATrack) track);
-        }
-
-        System.out.println(tracks);
-
-        for(Track track : tracks){
-            System.out.println(track.getAlbum());
-        }
-
-        em.close();
-        factory.close();
-
-    }
-
     @Override
     public ArrayList<Track> getTracks(String token, int forPlaylist) {
         ArrayList<Track> tracks = new ArrayList<>();
